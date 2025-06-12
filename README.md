@@ -1,8 +1,8 @@
 # Ansible Role: GitLab
 
-**Deprecated**: In September 2023, I deprecated this role as I am no longer maintaining any GitLab instances, and use Gitea instead for my personal work. Please consider forking this role or use someone else's GitLab role.
+**Deprecated**: In September 2023, geerlingguy deprecated this role as he is no longer maintaining any GitLab instances, and uses Gitea instead for his personal work. I forked this for now, but I'm not sure how long I will maintain this. Please consider forking this role again or use someone else's GitLab role.
 
-[![CI](https://github.com/geerlingguy/ansible-role-gitlab/workflows/CI/badge.svg?event=push)](https://github.com/geerlingguy/ansible-role-gitlab/actions?query=workflow%3ACI)
+[![CI](https://github.com/larskollstedt/ansible-role-gitlab/workflows/CI/badge.svg?event=push)](https://github.com/larskollstedt/ansible-role-gitlab/actions?query=workflow%3ACI)
 
 Installs GitLab, a Ruby-based front-end to Git, on any RedHat/CentOS or Debian/Ubuntu linux system.
 
@@ -177,7 +177,7 @@ None.
       vars_files:
         - vars/main.yml
       roles:
-        - { role: geerlingguy.gitlab }
+        - { role: larskollstedt.gitlab }
 
 *Inside `vars/main.yml`*:
 
