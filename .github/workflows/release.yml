@@ -36,5 +36,6 @@ jobs:
 
       - name: Trigger a new import on Galaxy.
         run: >-
+          echo "I am here";
           echo "${{ GALAXY_API_KEY }}" | wc;
           ansible-galaxy role import --token "${{ GALAXY_API_KEY }}" "$(echo ${{ github.repository }} | cut -d/ -f1)" "$(echo ${{ github.repository }} | cut -d/ -f2)"
